@@ -1,5 +1,1 @@
-[
-	{ "task": "went to the store" },
-	{ "task": "took car in for inspection" },
-	{ "task": "returned book to library" }
-]
+[{"time": " 13:05", "task": "woke up", "date": "Oct 25 2017"}, {"time": " 13:05", "task": "took a shower", "date": "Oct 25 2017"}, {"time": " 13:05", "task": "brushed teeth", "date": "Oct 25 2017"}, {"time": " 13:05", "date": "Oct 25 2017", "task": "went to work"}]
