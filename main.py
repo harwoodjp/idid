@@ -1,7 +1,7 @@
 import click, json, time
 
 def isRead(arg1, arg2):
-	if (arg2 == None and arg1 != "what"):
+	if arg2 == None and arg1 != "what":
 		return False
 	else: 
 		return True
@@ -12,15 +12,16 @@ def readHistory():
 		return history
 
 def writeHistory(str, date, time):
-	with open('history.json') as infile:
-		history = json.load(infile)
-		with open('history.json', 'w') as outfile:
-			history.append({
-				"date": date, 
-				"time": time, 
-				"task": str
-			})
-			json.dump(history, outfile)
+	if (str != None and str != ""):
+		with open('history.json') as infile:
+			history = json.load(infile)
+			with open('history.json', 'w') as outfile:
+				history.append({
+					"date": date, 
+					"time": time, 
+					"task": str
+				})
+				json.dump(history, outfile)
 		
 
 @click.command()
